@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <form name="formCliente">
+    <h1 id="cadastroClienteText">Ficha Catalografica</h1>
+    <span id="msg" class="success"></span>
+    <input type="text" name="email" id="email" class="input" placeholder="E-mail">
+    <input type="text" name="grau" id="" placeholder="Grau">
+    <input type="text" name="curso" id="" placeholder="Curso">
+    <input type="text" name="tipotrabalho" id="" placeholder="Tipo de Trabalho"><br/>
+    
+    <input type="text" name="titulo" id="" placeholder="Titulo do Trabalho">
+    <input type="text" name="subtitulo" id="" placeholder="Subtitulo">
+    <input type="text" name="ano" id="" placeholder="Ano"><br/>
+
+    <input type="text" name="palavra1" id="" placeholder="Palavra-chave 1">
+    <input type="text" name="palavra2" id="" placeholder="Palavra-chave 2">
+    <input type="text" name="palavra3" id="" placeholder="Palavra-chave 3">
+    <input type="text" name="palavra4" id="" placeholder="Palavra-chave 4">
+
+    <button type="submit"  class="adicionar" class="input" onclick="adicionar(event)">Adicionar</button>
+    <button type="submit" class="listar" class="input" onclick="listar(event)">Listar todos</button>
+  </form>
+
+  <table>
+    
+   <!--  <thead>
+      <tr>
+        <th class="th">Email</th>
+        <th class="th">Grau</th>
+        <th class="th">Curso</th>
+        <th class="th">Tipo de trabalho</th>
+        <th class="th">Titulo do trabalho</th>
+        <th class="th">Subtitulo</th>
+        <th class="th">Ano</th>
+        <th class="th">Palavra-chave 1</th>
+        <th class="th">Palavra-chave 2</th>
+        <th class="th">Palavra-chave 3</th>
+        <th class="th">Palavra-chave 4</th>
+      </tr>
+    </thead> -->
+    <tbody id="tbody">
+    </tbody>
+  </table>
+  
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
